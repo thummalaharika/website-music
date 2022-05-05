@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1music</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url('music.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% ;
+        
+        
+    }
+    .left{
+        
+        width: 120px;
+        height: 110px;
+        border: 3px solid gray;
+        position: absolute;
+        top: 60px;
+        left: 60px;
+    }
+    .left img{
+        
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+    }
+    .left div{
+        color: gray;
+        text-align: center;
+        font-size: 20px ;
+    }
+    .quote{
+        color: palevioletred;
+        font-size: 60px;
+        font-style: italic;
+        
+        
+        position: absolute;
+        top: 150px;
+        left: 100px;
+    }
+    .right{
+        position: absolute;
+        top: 50px;
+        right: 60px;
+        display: inline-block;
+        
+        font-size: 30px;
+        color: palevioletred;
+         
+    }
+    .navbar{
+        display: inline-block;
+        margin: auto;
+
+    }
+    .navbar li{
+        display: inline-block;
+        margin: auto;
+        
+    }
+    .navbar li a{
+        padding: 12px 12px;
+        text-decoration: none;
+    }
+    .navbar li a:hover{
+        color: palevioletred;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+    }
+    .instru{
+        
+       
+        position: absolute;
+        top: 200px;
+        right: 300px;
+    }
+    .instru li {
+        color: gray;
+        font-size: 50px;
+    }
+    #a{
+        background-color: yellowgreen;
+       border: 2px solid greenyellow;
+       width: 220px;
+       height: 50px;
+       border-top-right-radius: 130px;
+       
+    }
+    #b{
+        background-color: cornflowerblue;
+       border: 2px solid rgb(197, 115, 193);
+       width: 220px;
+       height: 50px;
+       border-top-right-radius: 130px;
+       
+       
+    }
+    #c{
+        background-color: rgb(220, 117, 137);
+       border: 2px solid rgb(197, 115, 193);
+       width: 220px;
+       height: 50px;
+       border-top-right-radius: 130px;
+       
+       
+    }
+    #d{
+        background-color: rgb(117, 211, 220);
+       border: 2px solid rgb(197, 115, 193);
+       width: 220px;
+       height: 50px;
+       border-top-right-radius: 130px;
+      
+    }
+    .select{
+        display: inline-block;
+        color: cornflowerblue;
+        border: 3px solid rgb(123, 234, 83);
+        width: 600px;
+        height: 35px;
+        position: absolute;
+        top: 110px;
+        right: 300px;
+        font-size: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .select label{
+       
+        
+        
+        padding-top: 10px;
+    }
+    #music{
+        background-color: rgb(28, 180, 28);
+       
+        padding-left: 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 25px;
+        height: 30px;
+    }
+    .sen{
+        margin: 70px;
+    }
+    .container{
+       border: 9px solid white;
+        background-color: rgb(71, 68, 68);
+        width:300px;
+        height: 250px;
+        position: absolute;
+        top: 350px;
+        left: 120px;
+        
+        color: rgb(7, 7, 7);
+        font-size: 23px;
+        border-radius: 7px;
+        padding: 0px;
+    }
+    .formgroup input{
+        size: 40px;
+       text-align: center;
+       font-size: 10px;
+       width: 170px;
+       height: 20px;
+       color: rgb(11, 10, 10);
+       
+    }
+    .btn{
+        width: 120px;
+        height: 30px;
+        background-color: black;
+        color: gray;
+        font-size: 18px;
+    }
+    .city{
+        display: inline-block;
+       
+        
+        color: aliceblue;
+        position: absolute;
+        bottom: 0px;
+        font-size: 25px;
+
+    }
+    .names li{
+        display: inline-block;
+        bottom: 0px;
+        font-size: 25px;
+        padding: 10px;
+
+    }
+    #p{
+        color: aqua;
+    }
+    #q{
+        color: rgb(77, 255, 0);
+    }
+    #r{
+        color: rgb(214, 124, 204);
+    }
+    #s{
+        color: rgb(219, 74, 89);
+    }
+    #t{
+        color: rgb(106, 148, 227);
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="select">
+            <label for="instrument" class="sen">you would like to learn</label>
+        <select name="instrument" id="music">
+            <option value="Guitar">Guitar</option>
+            <option value="Keyboard" selected>Keyboard</option>
+            <option value="violinh">Violin</option>
+            <option value="drums">Drums</option>
+        </select>
+        </div>
+        <div class="left">
+            <img src="music5.jpg" alt="">
+            <div>sony music</div>
+
+        </div>
+        <div class="quote">
+            <p>music is <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; love..</p>
+        </div>
+        <div class="right">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a> </li>
+                <li> <a href="#">About Us</a> </li>
+                <li> <a href="#">Tuner</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
+                
+            </ul>
+
+
+        </div>
+        <div class="instru">
+            <ul class="types">
+                <li class="sm" id="a">Guitar</li>
+                <li class="sm" id="b">Keyboard</li>
+                <li class="sm" id="c">Violin</li>
+                <li class="sm" id="d">Drums</li>
+            </ul>
+        </div>
+        <div class="city">
+            <ul class="names">
+                <li id="p">Chennai</li>
+                <li id="q">Delhi</li>
+                <li id="r">Hyderabad</li>
+                <li id="s">Kolkata</li>
+                <li id="t">Mumbai</li>  
+                
+            </ul>
+        </div>
+        <header>
+            <div class="container">
+                <h4>Join us for great music..</h4>
+                <form action="noaction.php">
+                    <div class="formgroup">
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="formgroup">
+                        <input type="text" placeholder="Enter your mobile number">
+                    </div>
+                    <div class="formgroup">
+                        <input type="text" placeholder="Enter your email address">
+                    </div>
+                    <div class="formgroup">
+                        <input type="text" placeholder="Enter your city">
+                    </div>
+                    <button class="btn">submit Now</button>
+    
+                </form>
+    
+            </div>
+        </header>
+    </header>
+</body>
+</html>
